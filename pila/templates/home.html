@@ -1,0 +1,41 @@
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <h>MUESTRA DE NUESTRO CATALOGO DE CARROS </h>
+<header>
+
+     <img src="{% static 'img/carro1.jpg' %}"  style="width: 200px;height: 200px;">
+     <img src="{% static 'img/carro3.jpeg' %}"  style="width: 200px;height: 200px;">
+     <img src="{% static 'img/carro2.jpg' %}" style="width: 200px;height: 200px;">
+     <img src="{% static 'img/carro4.jpg' %}" style="width: 200px;height: 200px;">
+     <img src="{% static 'img/choche1.jpg' %}" style="width: 200px;height: 200px;">
+     
+     
+     
+     <link href="{% static 'css/imagenes.css' %}" rel="stylesheet">
+</header>
+
+
+<ul>
+    
+    {% for pila in listado %}
+        <li>{{ pila }}</li>
+    {% endfor %}
+
+</ul>
+
+</body>
+</html>
+{% endblock content %}
+
+

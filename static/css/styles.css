@@ -1,0 +1,16 @@
+*{
+    background-color: burlywood;
+}
+
+h{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 35px;
+}
+
+li{
+    font-size: 27px;
+    color: teal;
+}
+
